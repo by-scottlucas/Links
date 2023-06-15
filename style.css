@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -23,23 +25,26 @@ img{
 h1{
     font-size: 2em;
     font-family: bebas neue;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 h2{
-    margin-bottom: 2%;
-    font-family: calibri;
-    font-size: 1.3em;
+    margin-bottom: 1%;
+    font-family: Roboto;
+    font-size: 18px;
 }
 
 .link-box{
-    width: 60%;
+    width: 50%;
     height: 40px;
     margin: auto;
     margin-top: 1%;
     text-align: center;
     background-color: #2b7be4;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
 .link-box a{
@@ -53,6 +58,32 @@ h2{
 .link-box:hover{
     background-color: #23354D;
     box-shadow: 0.5px 1.5px 0.5px #181818;
+}
+
+.main-nav ul{
+    list-style-type: none;
+}
+
+.main-nav li{
+    font-family:Calibri;
+    float: left;
+    margin: 1%;
+    outline: 1px solid dedede;
+    text-align:center;
+    width: 14.6%;
+}
+
+.main-nav a{
+    color: rgb(122, 122, 122);
+    font-size: .9rem;
+    display: block;
+    padding: 4%;
+    text-decoration: none;
+}
+
+.nav:hover{
+    font-weight: bold;
+    color: black;
 }
 
 .footer{
