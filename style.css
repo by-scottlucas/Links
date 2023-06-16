@@ -29,19 +29,21 @@ img{
 
 
 h1{
-    font-size: 2.2em;
+    font-size: 2rem;
     font-family: 'Bebas Neue', sans-serif;
 }
 
 h2{
     margin-bottom: 0.4%;
     font-family: Roboto;
-    font-size: 1.2em;
+    font-size: 1rem;
 }
 
 .link-box{
-    width: 80%;
+    width: 850px;
+    max-width: 100%;
     height: 40px;
+    max-height: 100%;
     margin: auto;
     margin-top: 1%;
     text-align: center;
@@ -99,7 +101,7 @@ h2{
     font-size: 1.1em;
     text-align: center;
     width: 100%;
-    height: 28px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
