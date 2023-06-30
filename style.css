@@ -72,32 +72,6 @@ h2{
     box-shadow: 0.5px 1.5px 0.5px #181818;
 }
 
-.main-nav ul{
-    list-style-type: none;
-}
-
-.main-nav li{
-    font-family:Calibri;
-    float: left;
-    margin: 1%;
-    outline: 1px solid dedede;
-    text-align:center;
-    width: 14.6%;
-}
-
-.main-nav a{
-    color: rgb(122, 122, 122);
-    font-size: .9rem;
-    display: block;
-    padding: 4%;
-    text-decoration: none;
-}
-
-.nav:hover{
-    font-weight: bold;
-    color: black;
-}
-
 .footer{
     font-family: calibri light;
     clear: both;
