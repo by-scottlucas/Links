@@ -12,7 +12,7 @@ body{
 
 .container{
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
 }
 
 .img-box{
@@ -30,23 +30,23 @@ img{
 
 h1{
     font-size: 2rem;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: Roboto;
+    margin-bottom: 0.2%;
 }
 
 h2{
-    margin-bottom: 0.5%;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .links-group{
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .link-box{
     width: 850px;
     max-width: 100%;
-    height: 58px;
+    height: 60px;
     max-height: 100%;
     margin: auto;
     margin-top: 1%;
@@ -74,13 +74,11 @@ h2{
 
 .footer{
     font-family: calibri light;
-    clear: both;
-    float: left;
-    font-size: 1.1em;
+    font-size: 1.2rem;
     text-align: center;
     width: 100%;
     height: auto;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     background-color:#e4e4e4;
