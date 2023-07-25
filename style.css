@@ -113,6 +113,9 @@ body{
 /* Celulares */
 
 @media screen and (min-width: 280px) {
+    .container{
+        padding-left: 18px;
+    }
 
 }
 
@@ -140,7 +143,7 @@ body{
     }
 
     .link-box{
-        width: 94%;
+        width: 80%;
         margin-bottom: 4px;
         height: 36px;
     }
@@ -161,5 +164,34 @@ body{
 /* Desktops */
 
 @media screen and (min-width: 1024px) {
+
+    .photo{
+        width: 200px;
+    }
+
+    .name{
+        font-size: 2.1rem;
+    }
+
+    .cargo{
+        font-size: 1.5rem;
+    }
+
+    .links-group{
+        width: 68%;
+    }
+
+    .link-box a {
+        font-size: 1.6rem;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        height: 2vh;
+    }
+
     
 }
