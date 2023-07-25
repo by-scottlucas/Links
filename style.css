@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,300&display=swap');
-@import url('https://fonts.cdnfonts.com/css/bebas-neue');
+
+@import url('https://fonts.cdnfonts.com/css/lemonmilk');
+
+@import url('https://fonts.cdnfonts.com/css/inter');
 
 * {
     margin: 0;
@@ -7,44 +10,53 @@
 }
 
 body{
-    background-color: #eeeeee;
+    overflow-x: hidden;
+    background-color: #212129;
 }
 
 .container{
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
-    width: 90%;
 }
 
-.img-box{
+.info-box{
     text-align: center;
 }
 
-img{
+.photo{
     margin-top: 20px;
     width: 160px;
     border-radius: 200px;
 }
 
 
-h1{
-    font-size: 2.4rem;
-    font-family: Montserrat;
+.name{
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-family: Roboto;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
-h2{
-    font-family: Calibri;
+.cargo{
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 500;
     font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .links-group{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .link-box{
     width: 280px;
     padding: 20px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 6px;
     text-align: center;
     background-color: #2b7be4;
     border-radius: 4px;
@@ -64,22 +76,90 @@ h2{
     align-items: center;
 }
 
+@keyframes hover {
+
+    0%{transform: translateY(0px);}
+
+    50%{transform: translateY(-3px);}
+
+    100%{transform: translateY(0px);}
+    
+}
+
 .link-box:hover{
+    animation: hover 0.5s ease-in-out infinite;
     transition: 0.5s;
     border-radius: 34px;
-    background-color: #23354D;
+    background-color: #184d92;
     box-shadow: 0.5px 1.5px 0.5px #181818;
 }
 
 .footer{
+    margin-top: 20px;
     color: #ffffff;
     font-family: calibri;
     font-size: 1.2rem;
     text-align: center;
+    padding: 10px;
     width: 100%;
     height: auto;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#2b2b2b;
+    background-color:#000000;
+}
+
+
+/* Celulares */
+
+@media screen and (min-width: 280px) {
+
+}
+
+/* Tablets */
+
+@media screen and (min-width: 768px) {
+
+    .photo{
+        width: 180px;
+    }
+
+    .name{
+        font-size: 2rem;
+    }
+
+    .cargo{
+        font-size: 1.4rem;
+    }
+
+    .links-group{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .link-box{
+        width: 94%;
+        margin-bottom: 4px;
+        height: 36px;
+    }
+
+    .link-box a {
+        font-size: 1.5rem;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        height: 7vh;
+    }
+}
+
+/* Desktops */
+
+@media screen and (min-width: 1024px) {
+    
 }
