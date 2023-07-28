@@ -1,5 +1,6 @@
 # Meu site de links
-Preferi criar meu próprio site de links e hospedá-lo gratuitamente no github pages.
+
+Projeto do meu site de links.
 
 # Link para acesso
 
