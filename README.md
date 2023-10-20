@@ -1,6 +1,6 @@
 # Meu site de links
 
-Projeto do meu site de links.
+Optei por não utilizar o Linktree e desenvolvi este projeto do meu site de links.
 
 # Link para acesso
 
