@@ -1,7 +1,7 @@
 {
     "name": "Links | Lucas Scott",
     "short_name": "Links",
-    "start_url": "/",
+    "start_url": "/links/",
     "display": "standalone",
     "background_color": "#212129",
     "theme_color": "#2b7be4",
