@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100dvh;
+    overflow-x: hidden;
+    background-color: #212129;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+}
+
+.photo {
+    width: 160px;
+    margin-top: 30px;
+    border-radius: 200px;
+}
+
+.nome {
+    color: #FFF;
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Roboto';
+}
+
+.cargo {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+}
+
+.links-group {
+    margin-top: 10px;
+}
+
+.link-box {
+    width: 280px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    cursor: pointer;
+    margin-top: 6px;
+    text-align: center;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b7be4;
+}
+
+.link-box a {
+    width: 100%;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.4rem;
+    font-family: 'Roboto';
+    text-decoration: none;
+    letter-spacing: 1.4px;
+}
+
+@keyframes hover {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+.link-box:hover {
+    transition: .5s;
+    border-radius: 34px;
+    background-color: #184d92;
+    box-shadow: .5px 1.5px .5px #181818;
+    animation: hover .5s ease-in-out infinite;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 10px;
+    color: #FFF;
+    font-size: 1.2rem;
+    align-items: center;
+    font-family: 'Calibri';
+    justify-content: center;
+    background-color: #000000;
+}
+
+#ano-atual {
+    margin: 0 4px;
+}
+
+/* ********** MEDIA QUERIES ********** */
+
+/* TABLETS */
+
+@media screen and (min-width: 768px) {
+
+    .photo {
+        width: 260px;
+    }
+
+    .nome {
+        font-size: 3rem;
+    }
+
+    .cargo {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .links-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link-box {
+        width: 80%;
+        height: 50px;
+        margin-bottom: 4px;
+    }
+
+    .link-box a {
+        font-size: 1.8rem;
+    }
+
+    .footer {
+        height: 45px;
+        display: flex;
+        font-size: 1.6rem;
+        margin-top: -30px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* DESKTOPS */
+
+@media screen and (min-width: 1024px) {
+
+    .container {
+        height: auto;
+    }
+
+    .photo {
+        width: 200px;
+    }
+
+    .nome {
+        font-size: 2.6rem;
+    }
+
+    .cargo {
+        font-size: 1.4rem;
+    }
+
+    .links-group {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .link-box {
+        height: 40px;
+    }
+
+    .link-box a {
+        font-size: 1.6rem;
+    }
+
+    .footer {
+        display: flex;
+        margin-top: 30px;
+        font-size: 1.6rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
