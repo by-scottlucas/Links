@@ -1,75 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="icon" href="assets/icon.png">
-    <link rel="manifest" href="manifest.json">
-    <title>Links | Lucas Scott</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de links de Lucas Scott, Desenvolvedor Fullstack. Acesse links importantes como GitHub, Behance, LinkedIn e redes sociais.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Meus Links | Lucas Scott">
+    <meta property="og:description" content="Página de links de Lucas Scott, Desenvolvedor Fullstack">
+    <meta property="og:image" content="./assets/og-image.png">
+    <meta property="og:site_name" content="Lucas Scott Links">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="./styles/style.css" as="style" media="print" onload="this.media='all'">
+    <title>Meus Links | Lucas Scott</title>
 </head>
-
 <body>
-
     <main class="container">
-
-        <section class="header">
-
-            <img src="assets/photo.jpg" alt="img" class="photo">
-            <h1 class="nome">LUCAS SCOTT</h1>
-            <h2 class="cargo">Full Stack Developer</h2>
-
+        <section class="user-header">
+            <img src="assets/photo.jpg" alt="img" class="user-image" loading="lazy">
+            <h1 class="user-name">Lucas Scott</h1>
+            <span class="user-position">Full Stack Developer</span>
         </section>
 
         <section class="links-group">
-
             <div class="link-box">
-                <a href="https://www.behance.net/Lucasscottart" target="_blank">Behance</a>
+                <a href="https://www.behance.net/Lucasscottart" target="_blank">
+                    Behance
+                </a>
             </div>
 
             <div class="link-box">
-                <a href="https://github.com/by-scottlucas" target="_blank">Github</a>
+                <a href="https://github.com/by-scottlucas" target="_blank">
+                    Github
+                </a>
             </div>
 
             <div class="link-box">
-                <a href="https://www.instagram.com/lucasscott.jpg/" target="_blank">Instagram</a>
+                <a href="https://www.instagram.com/lucasscott.jpg/" target="_blank">
+                    Instagram
+                </a>
             </div>
 
             <div class="link-box">
-                <a href="https://www.linkedin.com/in/bylucasscott/" target="_blank">Linkedin</a>
+                <a href="https://www.linkedin.com/in/bylucasscott/" target="_blank">
+                    Linkedin
+                </a>
             </div>
 
             <div class="link-box">
-                <a href="https://www.instagram.com/guridocoffee/" target="_blank">Ilustrações</a>
+                <a href="https://www.instagram.com/guridocoffee/" target="_blank">
+                    Ilustrações
+                </a>
             </div>
 
             <div class="link-box">
-                <a href="https://www.instagram.com/tracolivredg/" target="_blank">Design</a>
+                <a href="https://www.instagram.com/tracolivredg/" target="_blank">
+                    Design
+                </a>
             </div>
-
         </section>
 
+        <footer class="footer">
+            Lucas Scott &copy;<span id="current-year">2023</span>
+        </footer>
+
+        <script src="./scripts/script.js" defer></script>
     </main>
-
-    <footer class="footer">
-        Lucas Scott &copy;<span id="ano-atual">2023</span>
-    </footer>
-
-    <script src="./utils/script.js"></script>
-
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./utils/service-worker.js').then(registration => {
-                    console.log('Service Worker registrado com sucesso:', registration);
-                }).catch(error => {
-                    console.log('Falha ao registrar o Service Worker:', error);
-                });
-            });
-        }
-    </script>
 </body>
-
 </html>

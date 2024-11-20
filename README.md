@@ -8,7 +8,7 @@ Este projeto é uma página única desenvolvida como um hub central de links, pr
 
 - `styles`: Diretório contendo arquivos CSS que definem o estilo visual e a aparência do site.
 
-- `utils`: Diretório reservado para utilitários ou funções auxiliares que podem ser necessários para o funcionamento do site.
+- `scripts`: Diretório reservado para utilitários ou funções auxiliares que podem ser necessários para o funcionamento do site.
 
 - `index.html`: Página principal do projeto, que serve como ponto de entrada e apresentação do conteúdo principal.
 
