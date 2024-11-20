@@ -1,35 +1,32 @@
-# Minha Página de links
+# Meus Links
 
-Este projeto é uma página única desenvolvida como um hub central de links, projetada para oferecer acesso direto aos principais perfis em redes sociais e plataformas que contêm amostras dos serviços prestados pelo profissional.
+Este projeto é uma página única desenvolvida como um **hub de links**, projetada para fornecer acesso direto aos principais perfis em redes sociais e plataformas que apresentam amostras dos serviços prestados pelo profissional. É uma forma prática e organizada de centralizar links importantes para facilitar o acesso e a navegação.
 
-## Estrutura do Projeto
+## **Estrutura do Projeto**
 
-- `assets`: Diretório para armazenar recursos como imagens, ícones e outros elementos visuais utilizados no projeto.
+A estrutura do projeto é organizada da seguinte forma:
 
-- `styles`: Diretório contendo arquivos CSS que definem o estilo visual e a aparência do site.
+- **assets/**: Diretório que armazena recursos como imagens, ícones e outros elementos visuais utilizados no projeto.
+- **styles/**: Diretório que contém os arquivos **CSS** responsáveis pela estilização e aparência visual do site.
+- **scripts/**: Diretório reservado para scripts JavaScript auxiliares ou funções que podem ser necessárias para o funcionamento do site.
+- **index.html**: A página principal do projeto, servindo como ponto de entrada e apresentação do conteúdo.
+- **README.md**: Arquivo de documentação com informações detalhadas sobre o projeto, como sua estrutura, como executá-lo e outros detalhes importantes.
 
-- `utils`: Diretório reservado para utilitários ou funções auxiliares que podem ser necessários para o funcionamento do site.
+## **Tecnologias Utilizadas**
 
-- `index.html`: Página principal do projeto, que serve como ponto de entrada e apresentação do conteúdo principal.
+- **HTML**: Estruturação do conteúdo da página.
+- **CSS**: Estilos personalizados para o design da página.
+- **JavaScript**: Funções auxiliares e interatividade do site.
 
-- `README.md`: Arquivo de documentação que fornece informações sobre o projeto, sua estrutura, como executá-lo e outros detalhes relevantes.
+## **Autor**
 
-## Tecnologias Utilizadas
+Este projeto foi desenvolvido por **Lucas Santos Silva**, Desenvolvedor Full Stack, graduado pela **Escola Técnica do Estado de São Paulo (ETEC)** nos cursos de **Informática (Suporte)** e **Informática para Internet**.
 
-- HTML
-- CSS
-- JavaScript
+## **Licença**
 
-## Autor
+Este projeto está licenciado sob a **[Licença MIT](./LICENSE)**.
 
-Este projeto foi desenvolvido por Lucas Santos Silva, profissional com formação técnica em Informática (Suporte) e Informática para Internet.
+## **Acesso**
 
-
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](./LICENSE).
-
-
-## Acesso
-
-https://by-scottlucas.github.io/meus-links/
+Você pode acessar o projeto através do seguinte link:  
+[Meus Links - Acesse agora](https://by-scottlucas.github.io/meus-links/)

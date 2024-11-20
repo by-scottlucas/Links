@@ -1,80 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/montserrat');
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
-body {
-    height: 100dvh;
-    overflow-x: hidden;
-    background-color: #212129;
+body,
+html {
+    background-color: #121212;
 }
 
 .container {
-    height: 100vh;
+    height: 100%;
+    min-height: 320px;
+    max-height: max-content;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
-.header {
-    text-align: center;
+.user-header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
-.photo {
-    width: 160px;
-    margin-top: 30px;
-    border-radius: 200px;
+.user-image {
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 100%;
+    transition: transform 0.3s ease;
 }
 
-.nome {
+.user-image:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.user-name {
     color: #FFF;
     margin-top: 10px;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 5px;
-    font-family: 'Roboto';
 }
 
-.cargo {
+.user-position {
     color: #FFF;
     font-weight: 500;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    font-family: 'Roboto';
+    text-align: center;
 }
 
 .links-group {
-    margin-top: 10px;
+    gap: 6px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
 
 .link-box {
-    width: 280px;
-    padding: 20px;
+    width: 80%;
+    padding: 16px;
     margin: 0 auto;
-    display: flex;
     cursor: pointer;
-    margin-top: 6px;
     text-align: center;
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center;
-    background-color: #2b7be4;
+    border-radius: 3px;
+    background-color: #ff0045;
 }
 
 .link-box a {
     width: 100%;
     color: #FFF;
     font-weight: 600;
-    font-size: 1.4rem;
-    font-family: 'Roboto';
+    font-size: 1.1rem;
     text-decoration: none;
-    letter-spacing: 1.4px;
 }
 
 @keyframes hover {
-
     0% {
         transform: translateY(0px);
     }
@@ -86,119 +92,63 @@ body {
     100% {
         transform: translateY(0px);
     }
-
 }
 
 .link-box:hover {
     transition: .5s;
     border-radius: 34px;
-    background-color: #184d92;
-    box-shadow: .5px 1.5px .5px #181818;
+    background-color: #CC0238;
     animation: hover .5s ease-in-out infinite;
 }
 
 .footer {
-    width: 100%;
-    height: auto;
-    display: flex;
     padding: 10px;
     color: #FFF;
-    font-size: 1.2rem;
+    display: flex;
     align-items: center;
-    font-family: 'Calibri';
     justify-content: center;
-    background-color: #000000;
 }
 
-#ano-atual {
+#current-year {
     margin: 0 4px;
 }
 
-/* ********** MEDIA QUERIES ********** */
-
-/* TABLETS */
-
 @media screen and (min-width: 768px) {
-
-    .photo {
-        width: 260px;
+    .user-image {
+        width: 175px;
     }
 
-    .nome {
-        font-size: 3rem;
+    .user-name {
+        font-size: 2.4rem;
     }
 
-    .cargo {
-        font-size: 1.8rem;
-        margin-bottom: 25px;
-    }
-
-    .links-group {
-        display: flex;
-        flex-direction: column;
+    .user-position {
+        font-size: 1.2rem;
     }
 
     .link-box {
-        width: 80%;
-        height: 50px;
-        margin-bottom: 4px;
+        width: 70%;
     }
 
     .link-box a {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
 
     .footer {
-        height: 45px;
-        display: flex;
-        font-size: 1.6rem;
-        margin-top: -30px;
-        align-items: center;
-        justify-content: center;
+        font-size: 1.1rem;
     }
 }
 
-
-/* DESKTOPS */
-
 @media screen and (min-width: 1024px) {
-
-    .container {
-        height: auto;
-    }
-
-    .photo {
-        width: 200px;
-    }
-
-    .nome {
-        font-size: 2.6rem;
-    }
-
-    .cargo {
-        font-size: 1.4rem;
+    .user-image {
+        width: 150px;
     }
 
     .links-group {
-        width: 70%;
-        margin: 0 auto;
-    }
-
-    .link-box {
-        height: 40px;
+        width: 65%;
     }
 
     .link-box a {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
-
-    .footer {
-        display: flex;
-        margin-top: 30px;
-        font-size: 1.6rem;
-        align-items: center;
-        justify-content: center;
-    }
-
-
 }
